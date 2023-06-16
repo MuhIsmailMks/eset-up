@@ -1,0 +1,547 @@
+@media screen and (max-width:1100px) {
+    /* nav */
+
+    .menu_btn{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        right: 4rem;
+
+        height: 37px;
+        width: 40px; 
+    }
+    /* nav content */
+    nav ul,
+    nav .contact{
+        display: none;
+        opacity: 0;
+        position: absolute;
+        z-index: -99;
+    }
+
+    .nav_content{ 
+        display: flex;
+        flex-direction: column;
+
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 70vh; 
+
+        padding: 2rem 0;
+
+        min-height: 600px;
+
+        transform: translateX(100%);
+        transition: all .3s ease-in-out;
+    }
+
+    .nav_content.active{
+        transform: translateX(0%);
+    }
+
+    .nav_content::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.664);
+        background-color: rgba(255, 255, 255, 0.322);
+        backdrop-filter: blur(13px); 
+    }
+
+    .nav_content ul,
+    .nav_content .contact{
+        display: flex;
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav_content ul{
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .nav_content ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_content ul li a{
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .nav_content .contact{
+        width: 300px;
+        margin: 2rem auto;
+
+        max-width: 70%;
+    }
+    /* header */
+    header{
+        height: auto;
+    }
+
+     /* agency */
+     .agency{
+       height: auto;
+       margin-top: 15rem;  
+       flex-direction: column; 
+      }
+ 
+      .agency .agency_content{
+          width: 100%;   
+          padding: 0;
+      } 
+
+      .agency section{
+        text-align: center;
+        width: 100%;
+        margin-top: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .agency_content h2{
+        font-size: 4vw;
+        max-width: 80%;
+    }
+
+    .agency_content section p{
+        font-size: 2.4vw;
+    }
+    
+    .list_container {
+        width: 70%;
+        margin: 1rem auto;
+         
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .list_container .list{
+        font-size: 2.4vw;
+    }
+
+    /* testimonials */
+    .testimonials{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .testimonial_about{
+        height: auto; 
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 2rem;
+    }
+
+    .testimonial_client{
+        height: 300px;
+        width: 100%; 
+
+    } 
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        right: 2rem; 
+        left: 90%; 
+    }
+
+    .swiper-slide{ 
+        width: 550px;
+        margin: 0 auto;
+        max-width: 90%;
+
+        justify-content: center;
+    }
+ 
+}
+
+@media screen and (max-width:1100px) and (min-height:1000px){
+    .nav_content ul{ 
+        gap: 5rem; 
+    }
+
+    .nav_content .contact{ 
+        margin: 3rem auto; 
+    }
+}
+
+
+/* <= 1000px */
+@media screen and (max-width:1000px){
+    /* header */
+    header{
+        height: auto;
+        flex-direction: column-reverse;
+ 
+    }
+
+    
+    header .header_content,
+    header .header_image{
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .header_content{
+        align-items: center;
+        text-align: center;
+    }
+
+    /* hire */
+    .hire{
+        flex-direction: column;
+        height: 300px;
+
+        padding: 2rem 0 ; 
+        text-align: center;
+    }
+    
+     .hire button{
+        margin-right: 0; 
+    }
+
+    /* price */
+    .price_container{  
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* footer */
+    .navigation{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* <= 700px */
+@media screen and (max-width:800px){
+    /* services */
+    .service_container{
+        padding: 0 3rem;
+    }
+
+    /* hire */
+    .hire p{ 
+        font-size: 1.5rem; 
+    }
+
+    .hire button{
+        height: 50px;
+        width: 200px; 
+    }
+
+    /* price */
+    .price{
+        max-width: 40%;    
+    }
+
+    /* testimonials */
+    .swiper{
+        max-width: 95%; 
+    }
+
+        /* footer */
+    .email_form{
+        padding: 3rem 2rem 0;
+        text-align: center; 
+    }
+
+    .email_form p{ 
+        font-size: 1rem; 
+    }
+    
+    .bgFooter img:nth-child(2){ 
+        top: 10%;
+    }
+}
+ 
+/* <= 700px */
+@media screen and (max-width:700px){ 
+    /* costumers */
+    .our_clients p{
+        font-size: 4vw;
+    }    
+
+    .costumers .client{
+        width: 140px;
+        height: 60%;  
+        margin: .5rem;
+    }
+
+    .client img{
+        width: 80%;
+        height: auto;
+    }
+
+    /* services */
+    .services p:not(.service_about p){
+        font-size: 1.5rem; 
+    }
+
+    .service_container .service{
+        width: 40%; 
+    }
+
+    .service_image img{
+        height: 60%;
+    }
+
+    /* hire */
+       .hire p{  
+        width: 90%;
+    } 
+
+    /* price */
+    .prices p:not(.price p){
+        width: 90%; 
+    }
+}
+
+/* <= 600px */
+@media screen and (max-width:600px){
+     /* footer */
+     .email_form{
+        padding-top: 2rem;
+     }
+
+     .navigation li{ 
+        margin: .1rem;
+     }
+}
+
+/* <= 500px */
+@media screen and (max-width:500px){
+    /* nav */
+    nav{
+        padding: 0 2rem;
+        max-width: 100%;
+    }
+
+    .menu_btn{
+        right: 2rem;
+    }
+    /* header */
+    header{  
+        padding: 5rem 2rem 0; 
+    }
+
+    .header_content{
+        max-width: 100%;
+    }
+
+    .header_content h2{
+        font-size: 12vw; 
+        max-width: 90%;
+    }
+
+    .header_content p{
+        font-size: 4vw;
+        line-height: 1.4; 
+    }
+
+     /* costumers */ 
+    .costumers p{
+        font-size: 4vw;
+     }
+
+    .costumers .client{
+         width: 40%; 
+    }
+
+     .client img{
+            width: 80%; 
+     }
+
+     /* agency */
+     .agency_content{
+        padding: 0 9rem;
+     }
+
+
+     .agency_content h2{
+        font-size: 1.5rem;
+     }
+
+     .agency_content section p{
+        font-size: .9rem;
+        max-width: 80%;
+     }
+
+     .list_container .list{
+        font-size: .8rem;
+     }
+
+     
+    /* services */
+    .services{
+        padding: 0 2rem;
+    }
+
+    .service_container{
+        padding: 0 2rem;
+    }
+
+    .service_container .service{
+        width: 100%; 
+    }
+
+    .service_image img{
+        height: 50%; 
+    }
+
+    /* hire */
+    .hire button::before{
+        width: 50px;
+        height: 30px;
+        top: -40px;
+        right: 9px;  
+    }
+
+    /* price */
+    .price,
+    .price.active{
+        padding-bottom: 2rem;
+        width: 90%;  
+        max-width: 70%;  
+        overflow: hidden; 
+    }
+ 
+    .service_obtained{  
+        margin: .5rem 0;
+        font-size: .9rem;
+    }
+
+    .list_service{
+        margin-top: 1rem;
+    }
+
+    .list_service .list{
+        font-size: .9rem;
+        margin: 1rem 0; 
+    }
+
+    .price.active{
+        height: auto;
+    }
+
+     /* testimonials */ 
+     .testimonial_client{
+        height: 360px;
+     }
+
+     .swiper{
+        max-width: 100%;  
+        height: 100%;
+    }
+
+    .swiper-slide .testimoni{ 
+        height: 50%; 
+        width: 100%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .swiper-button-prev{
+        top: 2rem;
+    }
+    .swiper-button-next{  
+        bottom: 0rem;
+        top: 90%;
+    }
+
+    .quote_word{
+        font-size: .85rem; ;
+    }
+
+    .testimonial_about h2{
+        font-size: 2rem; 
+    }
+    
+    .testimonial_about p{ 
+        font-size: 1rem; 
+    }
+
+    /* footer */
+    footer{
+        height: auto;
+        max-height: 2000px;
+    }
+
+    .email_form{
+        height: 400px; 
+    }
+
+    .email_login{
+        width: 100%;
+    }
+    .email_form h2{
+        font-size: 1.9rem;
+    }
+
+    .email_form p{
+        font-size: .9rem;
+    }
+
+    .email_login{
+        flex-direction: column;
+    }
+
+    .email_login input,
+    .email_login button{
+        height: 40px; 
+    }
+
+    .email_login input{
+        max-width: 90%;
+    }
+    .email_login button{
+        max-width: 50%;
+        font-size: .75;
+    }
+
+    .email_login input::placeholder{
+        font-size: .8rem;
+    }
+
+    .nav_footer{
+        margin-top: 2rem; 
+        padding: 0 1rem;
+    }
+
+    .nav_footer > div{
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .navigation{
+        gap: 1rem;
+    }
+
+    .navigation li{
+        width: 40%;  
+
+        text-align: center;
+    }
+
+}
