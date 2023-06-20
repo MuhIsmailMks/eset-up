@@ -11,6 +11,24 @@
 
         height: 37px;
         width: 40px; 
+        overflow: hidden;
+    }
+
+    .menu_btn span{  
+        transition: all .3s ease-in-out;
+    }
+
+    .menu_btn.active span:nth-child(2){ 
+        transform: translateX(-200%);
+    }
+
+    .menu_btn.active span:nth-child(1){ 
+        margin-top: 1.1rem; 
+        rotate: 45deg;
+    }
+    .menu_btn.active span:nth-child(3){ 
+        margin-bottom: 1.1rem; 
+        rotate: -45deg;
     }
     /* nav content */
     nav ul,
@@ -50,7 +68,7 @@
         height: 100%;
         width: 100%;
         
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.664);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.199);
         background-color: rgba(255, 255, 255, 0.322);
         backdrop-filter: blur(13px); 
     }
@@ -335,6 +353,16 @@
 
     .menu_btn{
         right: 2rem;
+        height: 30px;
+    }
+
+    .menu_btn.active span:nth-child(1){ 
+        margin-top: .9rem; 
+        rotate: 45deg;
+    }
+    .menu_btn.active span:nth-child(3){ 
+        margin-bottom: .9rem; 
+        rotate: -45deg;
     }
     /* header */
     header{  

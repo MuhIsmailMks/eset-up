@@ -53,7 +53,8 @@ window.addEventListener('scroll', scrollActiveMenu)
 const menuBtn = document.querySelector('.menu_btn');
 
 menuBtn.addEventListener('click', () => {
-    navContent.classList.toggle('active')
+    navContent.classList.toggle('active');
+    menuBtn.classList.toggle('active');
 })
 
 // client testimoni slide 
