@@ -105,8 +105,8 @@
 
         max-width: 70%;
     }
-    /* header */
-    header{
+    /* .hero-section */
+    .hero-section{
         height: auto;
     }
 
@@ -122,7 +122,7 @@
           padding: 0;
       } 
 
-      .agency section{
+      .agency article{
         text-align: center;
         width: 100%;
         margin-top: 3rem;
@@ -137,7 +137,7 @@
         max-width: 80%;
     }
 
-    .agency_content section p{
+    .agency_content article p{
         font-size: 2.4vw;
     }
     
@@ -202,21 +202,21 @@
 
 /* <= 1000px */
 @media screen and (max-width:1000px){
-    /* header */
-    header{
+    /* hero section */
+    .hero-section{
         height: auto;
         flex-direction: column-reverse;
  
     }
 
     
-    header .header_content,
-    header .header_image{
+    .hero-section .hero_content,
+    .hero-section .hero_image{
         width: 100%; 
         max-width: 100%;
     }
 
-    .header_content{
+    .hero_content{
         align-items: center;
         text-align: center;
     }
@@ -274,7 +274,7 @@
         max-width: 95%; 
     }
 
-        /* footer */
+    /* footer */
     .email_form{
         padding: 3rem 2rem 0;
         text-align: center; 
@@ -364,21 +364,21 @@
         margin-bottom: .9rem; 
         rotate: -45deg;
     }
-    /* header */
-    header{  
+    /* .hero-section */
+    .hero-section{  
         padding: 5rem 2rem 0; 
     }
 
-    .header_content{
+    .hero_content{
         max-width: 100%;
     }
 
-    .header_content h2{
+    .hero_content h2{
         font-size: 12vw; 
         max-width: 90%;
     }
 
-    .header_content p{
+    .hero_content p{
         font-size: 4vw;
         line-height: 1.4; 
     }
@@ -406,7 +406,7 @@
         font-size: 1.5rem;
      }
 
-     .agency_content section p{
+     .agency_content article p{
         font-size: .9rem;
         max-width: 80%;
      }
