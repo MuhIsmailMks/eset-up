@@ -162,7 +162,7 @@ nav .contact{
 /* header */
 .hero-section{ 
     max-width: 100%;
-    height: 100vh; 
+    height: auto; 
 
     justify-content: center;
     padding: 8rem 4rem 0;
