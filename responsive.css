@@ -1,6 +1,5 @@
 @media screen and (max-width:1100px) {
     /* nav */
-
     .menu_btn{
         position: absolute;
         display: flex;
@@ -30,6 +29,7 @@
         margin-bottom: 1.1rem; 
         rotate: -45deg;
     }
+
     /* nav content */
     nav ul,
     nav .contact{
@@ -105,6 +105,7 @@
 
         max-width: 70%;
     }
+
     /* .hero-section */
     .hero-section{
         height: auto;
@@ -247,7 +248,7 @@
     }
 }
 
-/* <= 700px */
+/* <= 800px */
 @media screen and (max-width:800px){
     /* services */
     .service_container{

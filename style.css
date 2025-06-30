@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;400;500;600;700&display=swap');
 
+:root {
+  --primary-color: #EF0178; 
+}
+
 *,*::before,*::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -110,6 +115,7 @@ nav .logo{
     font-size: .9rem;
 }
 
+
 nav ul{
     list-style: none;
     gap: .5rem;
@@ -131,14 +137,14 @@ ul li:hover a{
 
 ul li.active a,
 ul li.active a.active{
-    color: #EF0178;
+    color: var(--primary-color);
 }
 
 nav .contact{
     height: 40px;
     width: auto;
 
-    border: 1px solid #EF0178;
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
 }
 
@@ -149,16 +155,16 @@ nav .contact{
     font-weight: 600;
     padding: 1rem 1.15rem;
 
-    color: #EF0178;
+    color: var(--primary-color);
 }
 
 /* menu btn */
 .menu_btn span{
-    background-color: #EF0178;
+    background-color: var(--primary-color);
     height: 3px;
     width: 100%; 
 }
-
+ 
 /* header */
 .hero-section{ 
     max-width: 100%;
@@ -189,7 +195,7 @@ nav .contact{
 }
 
 .hero_content h2 span{
-    color: #EF0178;
+    color: var(--primary-color);
 }
 
 .hero_content p{
@@ -235,7 +241,7 @@ nav .contact{
 }
 
 .costumers h3{
-    color: #EF0178;
+    color: var(--primary-color);
     font-weight: 800;
 
     font-size: 1rem;
@@ -329,7 +335,7 @@ nav .contact{
 .services h2{
     font-size: 1rem;
     font-weight: 900;
-    color: #EF0178;
+    color: var(--primary-color);
 
     margin-bottom: 2rem;
 }
@@ -428,7 +434,7 @@ nav .contact{
 }
 
 .hire button{
-    background-color: #EF0178;
+    background-color: var(--primary-color);
     outline: none;
     border: none;
     color: white;
@@ -577,7 +583,7 @@ nav .contact{
 
 .price.active .choose{
     margin-top: 2rem;
-    background-color: #EF0178;
+    background-color: var(--primary-color);
 }
 
 .price.active .most{
@@ -863,7 +869,7 @@ footer{
 }
 
 .by a{
-    color: #EF0178;
+    color: var(--primary-color);
     text-decoration: none; 
 }
 
